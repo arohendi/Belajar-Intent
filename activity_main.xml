@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intent"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textSize="100dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btnpgl"
+            android:text="Panggil"
+            android:layout_margin="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="panggil"/>
+
+        <Button
+            android:id="@+id/btnbuka"
+            android:text="Buku Browser"
+            android:layout_margin="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnpgl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:onClick="buka"/>
+
+        <Button
+            android:id="@+id/btntentang"
+            android:text="TENTANG"
+            android:layout_margin="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnbuka"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:onClick="tentang"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
